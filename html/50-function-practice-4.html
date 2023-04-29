@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function Practice-4</h1>
+
+    <script>
+        /*
+​
+            Q — Create a function that calculates the factorial of a number.
+            n! = n * (n-1) * (n-2) * ... * 2 * 1
+             5! = 5 * 4 * 3 * 2 * 1
+            1 - It will go backwards from the given number to "0";
+            2 - we dont use "0";
+            3 - We dont get any negative numbers.
+        */
+
+        const factorial = (num) =>{
+
+            let result = 1;
+
+            for(let i =num; i>0; i--){
+
+                result *=i  // result = result * i;
+                
+                console.log(result, i)
+
+            }
+            return result;
+
+        }
+        //factorial(5);
+
+        console.log(factorial(5));
+        console.log(factorial(-5));
+        console.log(factorial(0));
+       // document.write(factorial(5));
+
+
+    </script>
+    
+</body>
+</html>

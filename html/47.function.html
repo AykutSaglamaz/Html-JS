@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <h1>Functions</h1>
+<body>
+    <script>
+        // --------------TRADITIONAL METHOD----------
+       //function functionName(num1, num2){
+       //    console.log("hello");
+       //    console.log(num1 + num2);
+       //    return num1 + num2;
+       //}
+       //functionName(5, 7);
+       //console.log(functionName(5, 7));
+       //var x = functionName(5,7);
+       //console.log(x);
+        
+       //function calculateAge(thisYear, birthYear){
+       // console.log(`My Age is ${thisYear-birthYear}`);
+       // let age = thisYear-birthYear;
+       // return age;
+//
+       //}
+       //calculateAge(2023, 1990);
+       //let age = calculateAge(2023, 1990);
+       //console.log(age);
+
+       // --------------EXPRESSION  METHOD----------
+       //const calculateAge = function(thisYear, birthYear){
+       // console.log(thisYear-birthYear);
+       // return thisYear-birthYear;
+//
+       //}
+       //calculateAge(2023, 1990);
+       //console.log(calculateAge(2023, 1990));
+
+       // --------------ARROW METHOD----------
+
+       //const calculateAge = (thisYear, birthYear) => thisYear-birthYear;
+       //let age = calculateAge(2023, 1990)
+       //console.log(age);
+
+
+       const calculateAge = (thisYear, birthYear) => {
+            console.log("Hello World")
+            return thisYear-birthYear;
+       }
+       let age = calculateAge(2023, 1990)
+       console.log(age);
+
+
+    </script>
+</body>
+</html>

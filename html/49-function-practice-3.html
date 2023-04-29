@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function Practice-3</h1>
+
+    <script>
+        let userName = prompt("Please Enter Your Name");
+
+        // -------------Arrow Function ----------------
+       //const greedWorld = (name) => alert(`Hello ${name}`)
+       //greedWorld(userName);
+
+        // -------------Traditional Method ----------------
+
+       //function greedWorld (name){
+       //    alert(`Hello ${name}`)
+       //}
+       //greedWorld(userName);
+
+        // -------------Expression Method ----------------
+
+        const greedWorld=function(name){
+            alert(`Hello ${name}`);
+        }
+        greedWorld(userName);
+    </script>
+</body>
+</html>
