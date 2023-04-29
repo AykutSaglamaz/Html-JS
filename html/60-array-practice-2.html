@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAY PRACTICE-2</h1>
+
+    <script>
+         /* 
+​
+            Q — Create a program that finds the maximum number in an array
+​
+        */
+
+        const numbers = [10, 55, 26, 18, 22, 39, 92, 5, 44, 26];
+        const finMax = (arr)=>{
+            let maxNum = arr[0];
+            let sPoint = 1;
+
+            for(let i = sPoint; i<arr.length; i++){
+                if(arr[i] > maxNum){
+                    maxNum = arr[i];
+                }
+
+            }
+            return maxNum;
+
+        }
+        console.log(finMax(numbers))
+
+        //let returnedValue = finMax(numbers);
+       // console.log(returnedValue);
+       </script>
+</body>
+</html>

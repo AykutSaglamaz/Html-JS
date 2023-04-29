@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SCOPE</h1>
+
+    <script>
+        /*
+            3 KINDS OF SCOPES:
+​
+            1 - GLOBAL SCOPE
+            2 - FUNCTION SCOPE
+            3 - BLOCK SCOPE // only valid for "let" and "const"
+            
+            GLOBAL SCOPE
+​
+            declare them - creating them for the first time
+​
+            var                      accessible from every scope
+            let                      accessible from every scope
+            const                    accessible from every scope
+​
+            FUNCTION SCOPE
+​
+            var                      accessible from function
+            let                      accessible from function
+            const                    accessible from function
+​
+​
+            BLOCK SCOPE
+​
+            var                      accessible from everywhere
+            let                      accessible from block scope
+            const                    accessible from block scope
+            
+            */
+
+            // -----------FUNCTION SCOPE---------------
+
+            const foo = function(){
+                let num1 = 22;
+                var num2 = 23;
+                const num3 = 24;
+                num4=25; // If it is not declared as (let, var or const) JS accept it as a global variable.
+                console.log(num1);
+                console.log(num2);
+                console.log(num3);
+            }
+            foo();
+           // console.log(++num1);
+            //console.log(++num2);
+           // console.log(++num3);
+            console.log(++num4);
+
+              // -----------GLOBAL SCOPE---------------
+
+              let num1 = 5;
+                num3=12; // JS know  that as a global variable.
+              const myFunction = ()=>{
+                num1 = 10;
+                console.log(`Inside Function: ${num1}`);    
+                console.log(`Inside Function: ${num3}`);    
+              }
+              myFunction();
+              console.log(`Outside Function: ${++num1}`);
+              console.log(`Outside Function: ${++num3}`);
+
+               // -----------BLOCK SCOPE---------------
+
+               const myFunction1 = function(num){
+                if(num<0){
+                    let negative = true; // if You used the let and const for declaration only works inside the block scope
+                    var positive = false;// var reachable from outside of the Block Scope but not outside of the Function scope
+                }
+               // console.log(positive);
+               // console.log(negative);
+
+               }
+               myFunction1(-4);
+               //console.log(negative);
+
+               // -----------VAR vs LET---------------
+
+                // -----------First Example---------------
+
+               function test(){
+                var a = "Hello";
+                let b= "World";
+                if(true){
+                    var x = "New York";
+                    let y = "San Francisco";
+                }
+                console.log(a,b,x);
+                //console.log( y);
+               }
+               test();
+
+                // -----------Second Example---------------
+
+                const test1 = ()=>{
+                    let x = 33;
+                    let z = 11;
+                    g=34;// JavaScript regards undeclared variables as global
+
+                    if(x>20){
+                        let s = 15;
+                        s = s +10; //y +=10;
+                        var t = 39;
+
+                    }
+                    //console.log(s);
+                    console.log(z);
+                    console.log(t);
+                    console.log(g);
+                    console.log(z);
+                }
+                test1();
+                console.log(g);
+                
+
+    </script>
+</body>
+</html>

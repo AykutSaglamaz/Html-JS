@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OBJECT PRACTICE-1</h1>
+    
+    <script>
+        let avg = 53;
+        let grades = {
+            midterm : 70,
+            final : 88
+        }
+        const checkedIfPassed = (grade1, grade2)=>{
+            let sum = grade1 + grade2;
+            //console.log(grade1, grade2)
+            let passed = false;
+
+            if(sum/2 > avg){
+                passed = true;
+
+            }
+            return passed;
+        }
+
+        //console.log(checkedIfPassed(70, 88));
+        //console.log(checkedIfPassed(grades.midterm, grades.final))
+        
+        if(checkedIfPassed(grades.midterm, grades.final)){
+            alert("You've Passed the Exam");
+
+        }else{
+            alert("You couldn't pass!!")
+        }
+    </script>
+</body>
+</html>

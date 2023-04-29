@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAY PRACTICE-3</h1>
+
+    <script>
+        const numbers = [10, 55, 26, 18, 22, 39, 92, 5, 44, 26];
+
+        const findMinMaxDiff = (arr)=>{
+            let maxNum = arr[0];
+            let minNum = arr[0];
+            let sPoint = 1;
+
+            for(let i= sPoint; i< arr.length; i++){
+
+                if(arr[i] > maxNum){
+                    maxNum = arr[i];
+                }
+                if(arr[i] < minNum){
+                    minNum = arr[i];
+
+                }
+
+            }
+            let diff = (maxNum - minNum);
+            return diff;
+
+        }
+
+        console.log(findMinMaxDiff(numbers));
+        document.write(findMinMaxDiff(numbers));
+    </script>
+</body>
+</html>

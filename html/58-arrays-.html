@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAYS</h1>
+
+    <script>
+        /*
+​
+            An array is a special data type, which can hold more than one value.
+​
+        */
+        const simpleArray = [1,2,3,4,5,6,7];
+        const objectArray = [
+            {
+                brand : "Mercedes",
+                model : "S500",
+                color : "Beige",
+                type : "Automatic"
+            },
+
+            {
+                brand : "Audi",
+                model : "A6",
+                color : "Gray",
+                type : "manual"
+            },
+           
+        ]
+
+        const courses = ["JavaScript", "HTML", "CSS", "LWC"];
+
+        let courses1 = ["JavaScript", "HTML", "CSS", "Bootstrap"];
+
+        courses[0]="React" // Array let you change the primitive data
+
+        //courses = ["APEX", "Bootstrap"]; //ERROR: cant't reassign variables created 
+        courses1 = ["APEX", "Bootstrap"];
+
+        console.log(courses);
+        console.log(courses1);
+
+        console.log(courses[0]);
+        console.log(courses[4]);
+
+        console.log(courses[courses.length-1])
+        console.log(courses1[courses1.length-1])
+
+    </script>
+</body>
+</html>
