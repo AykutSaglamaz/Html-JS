@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>QuerySelector</h1>
+    <nav class="menu">
+        <ul>
+            <li id="box1">Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="hello">
+        <div>Helloworld</div>
+        <div>Helloworld</div>
+        <div>Helloworld</div>
+    </div>
+    
+    <script>
+        let menu1 = document.querySelector(".menu");
+        console.log(menu1);
+
+        let box1 = document.querySelector("#box1");
+        console.log(box1);
+
+        console.log(box1.innerText);
+        box1.innerText = "Hello world";
+
+        box1.innerText ="<b>Hello John</b>";
+
+        box1.innerHTML ="<b>Hello John</b>";
+
+        box1.innerHTML =" Hello <b> John</b>";
+
+        box1.innerHTML =`<em> Hello <b> John</b> <em>`;
+
+        box1.innerHTML =` <span style="color:red" > Hello John </span>`;
+
+
+
+    </script>
+
+</body>
+</html>

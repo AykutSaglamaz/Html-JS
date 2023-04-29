@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SALARY RAISE CALCULATION</title>
+  </head>
+  <body>
+    <h1>ELSE IF PRACTICE SALARY RAISE CALCULATION</h1>
+
+    <input type="number" name="" id="salary" placeholder="Enter Your Salary" />
+    <input onclick="calculateRaise()" type="button" value="Calculate" />
+
+    <p id="result"></p>
+
+    <script>
+      /*
+        
+Q — Write a program that receives salary and calculates it as follows:
+​
+1 – If the salary is between 1000-2000, apply 30% raise,
+2 – If the salary is between 2000-4000, apply 15% raise,
+3 – If the salary is greater than 4000, apply 5% raise,
+​
+​
+            */
+
+      function calculateRaise() {
+        let salary = +document.querySelector("#salary").value;
+        let result = document.querySelector("#result");
+
+        if (salary< 0){
+            result.innerHTML = `Enter a valid value please`;
+        
+      }else if(salary > 1000 && salary <= 2000) {
+          salary = salary + (salary * 30) / 100;
+          result.innerHTML = `Your salary is ${salary}`;
+         
+        } else if (salary > 2000 && salary <= 4000) {
+          salary *= 1.15; // salary = salary + salary*15/100
+          result.innerHTML = `Your salary is ${salary}`;
+
+        } else if (salary > 4000) {
+          salary *=1.05; // salary = salary + salary*5/100;
+          result.innerHTML = `Your salary is ${salary}`; 
+
+        } else {
+          salary *=1.5; // salary = salary + salary*50/100; 
+          result.innerHTML = `Your salary is ${salary}`;
+        }
+        
+        
+      }
+    </script>
+  </body>
+</html>

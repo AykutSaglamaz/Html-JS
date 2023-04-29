@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Validation</title>
+</head>
+<body>
+    <h1>Form & Validation</h1>
+    <table>
+        <tbody>
+            <tr>
+            <td>First Name</td>
+            <td><input type="text"></td>
+            <td rowspan="2" align="left" >Hobbies</td>
+            <td><input type="checkbox" name="hobbies" id="football" value="football">
+                <label for="football">Football</label> <br>
+                <input type="checkbox" name="hobbies" id="basketball" value="basketball">
+                <label for="basketball">Basketball</label> <br>
+                <input type="checkbox" name="hobbies" id="soccer" value="soccer">
+                <label for="soccer">Soccer</label>
+            </td>
+            </tr>
+            <tr>
+            <td>Last Name</td>
+            <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Not Specified</label>
+                </td>
+                <td>Profile Picture</td>
+                <td><input type="file" placeholder="Choose a File" value="Choose a file"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                <select name="City" id="city" ></select>
+                </td>
+                <td>Birthdate</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" id="email" placeholder="abc@hotmail.com">
+                    <label for="email" ></label>
+                </td>
+                <td>Address</td>
+                <td><textarea name="text" id="textadress" cols="20" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>Personal Website</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td> <label for="tel">Phone</label>
+                    <input type="tel" placeholder="(000) - 00 00">
+                </td>
+
+                <td></td>
+                <td><button type="submit">Register</button></td>
+            </tr>
+
+
+
+        </tbody>
+ 
+
+    </table>
+    
+</body>
+</html>

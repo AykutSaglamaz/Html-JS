@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="result"></h3>
+    
+    <script>
+        /*
+        for(var i=0; i<10; i++){
+            console.log(`Hellow World : ${i}`);
+        }
+        */
+        // write a program that finds the average of 5 entered numbers
+        var sum= 0;
+        const numberOfLoops = 5;
+        for(var i=0; i<numberOfLoops; i++){
+
+            let num = +prompt(`Please enter ${i+1}. number`);
+
+            sum = sum+num;
+        }
+       let mean = sum/numberOfLoops
+
+       document.getElementById("result").innerHTML = mean;
+       // or
+       alert(`The mean of numbers is ${mean}`)
+
+    </script>
+</body>
+</html>

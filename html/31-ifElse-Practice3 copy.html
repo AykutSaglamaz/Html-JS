@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Practice 2</title>
+</head>
+<body>
+    <h1>Bady Mass Index Calculation</h1>
+
+    <label for="weight"> weight (please type in kgs)</label>
+    <input type="number" id="weight">
+    <br>
+    <label for="height"> height (please type in cm)</label>
+    <input type="number" id="height">
+    <br>
+    <input onclick="calculate()" type="button" value="calculateBodyMass">
+    <p id="result"></p>
+
+    <script>
+
+        function calculate(){
+        let weight = document.querySelector("#weight").value;
+        let height = document.querySelector("#height").value;
+        console.log(weight, height);
+
+        let result = document.querySelector("#result");
+
+        let bmi = weight / height**2;
+        const idealMin = 18.5;
+        const idealMax = 25;
+
+        if(bmi >idealMax || bmi <idealMin){
+            result.innerHTML =`Not ideal BMI your BMI ${bmi}`;
+
+        }else{
+            result.innerHTML =`Ideal BMI ${bmi} `;
+        }
+        }
+
+
+    </script>
+    
+</body>
+</html>

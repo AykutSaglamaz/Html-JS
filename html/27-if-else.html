@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>If-else</h1>
+    <input type="number" id="num1" placeholder="give me a number">
+
+    <input onclick="getNum()" type="button" value="calculate">
+    <p class="result">Result: </p>
+
+    <script>
+        function getNum(){
+            let num = +document.querySelector("#num1").value;
+            let result = document.querySelector(".result");
+
+            if(num !== 0){
+                num = num/5;
+                
+            }
+            result.innerHTML =`Result: ${num}`;
+        }
+    </script>
+    
+</body>
+</html>

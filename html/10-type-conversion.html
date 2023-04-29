@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let newName = "1225adf4";
+        console.log(Number (newName));
+        // if you try to convert that does not include ONLY numbers, it well return as 'NaN'=>> not a Number
+
+        let money ="100";
+        console.log(Number(money));
+
+        const lang ='JavaScript';
+        console.log(Number(lang));
+
+        const money1 = 5400;
+       console.log(money1 + 15); // return  number
+       console.log(String(money1)+15); // return String
+
+       // you can use shorter version of Number as of (+) (+name);
+
+       /*
+       When you want to convert a data type to another, you can use following method
+        Boolean()
+        Number()
+        String()
+       */
+
+       const s1 = 5;
+        const s2 = -7;
+        const name = "John";
+
+        console.log(Boolean(name)); // TRUE
+        console.log(Boolean(s1));// TRUE
+        console.log(Boolean(s2));// TRUE
+
+        const zero = 0;
+        const nal = null;
+        const undef = undefined;
+        const blank = "";
+        const notANumber = NaN;
+
+        console.log(Boolean(zero));
+        console.log(Boolean(nal));
+        console.log(Boolean(undef));
+        console.log(Boolean(blank));
+        console.log(Boolean(notANumber));
+
+        // BOOLEAN return TRUE or FALSE;
+        // 0, null, undefined, "", NaN returned FALSE
+        // other than this exceptions it returned TRUE;
+
+    </script>
+    
+</body>
+</html>

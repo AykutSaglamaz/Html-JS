@@ -1,0 +1,25 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    text-align: center;
+    background-color: grey;
+    width: 150px;
+}
+.active{
+    background-color: black;
+    
+}
+.active a{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+div{
+    margin-top: 20px;
+}
+a:hover{
+    color: greenyellow;
+}

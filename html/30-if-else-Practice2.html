@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else Practice 2</title>
+</head>
+<body>
+    <h1>IF-Else Practice 2</h1>
+    <input onkeyup="txtButton()" type="text" id="userText" placeholder="Enter Your Name">
+    
+<!--     <input onclick="txtButton()" type="button" value="Greet">
+ -->    <p id="result"></p>
+
+    <script>
+        function txtButton(){
+            let userText = document.querySelector("#userText").value;
+            let result = document.querySelector("#result");
+
+            let min = 2;
+            let max = 20;
+
+            if(userText.length > min && userText.length< max){
+                console.log(userText.length);
+                result.innerHTML = `Hello! ${userText}`;
+
+            }else{
+                result.innerHTML = `This is not correct`;
+
+            }
+        }
+    </script>
+
+</body>
+</html>

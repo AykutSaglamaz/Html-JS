@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innertext, InnerHTML</title>
+    <style>
+        .tred{
+            color: red;
+        }
+        .tblue{
+            color: blue;
+        }
+        .bgviolet{
+            background-color: violet;
+            width: 50px;
+            height: 50px;
+        }
+        .lmargin{
+            margin-left: 20px;
+        }
+​
+    </style>
+</head>
+<body>
+    <h1>Innertext, InnerHTML</h1>
+​
+    <h2>JavaScript</h2>
+    <div class="jsexpl">Programing language</div>
+​
+    <h2>HTML</h2>
+    <div id="htmlexpl">Markup Language</div>
+​
+    <h2>CSS</h2>
+    <div class="cssexpl">Cascading style sheet</div>
+​
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+​
+    <div class="boxlist">
+        <div class="box first"> Hello World</div>
+        <div class="box second"></div>
+        <div class="box third"></div>
+    </div>
+​
+​
+    <script>
+       //console.log( document.querySelector("h2"));
+       let firstH2= document.querySelector("h2");
+       console.log(firstH2);
+      console.log(firstH2.innerText);
+      firstH2.innerText = "Hello JavaScript";
+      firstH2.innerText = "<b> Hello JavaScript </b>"
+      firstH2.innerHTML = "<b> Hello JavaScript </b>"
+ 
+      firstH2.innerHTML = "<em> Hello Italik JavaScript </em>"
+      console.log(firstH2.innerHTML);
+​
+      let h1Tag =document.querySelector("h1");
+      console.log(h1Tag.innerHTML)
+      h1Tag.innerHTML = "<em> InnerText, InnerHTML </em>";
+​
+      let divList = document.querySelector(".box.first");
+      console.log(divList);
+      console.log(divList.classList);
+      divList.classList.add("tred");
+      console.log(divList.classList);
+​
+​
+    
+        
+    </script>
+</body>
+</html>

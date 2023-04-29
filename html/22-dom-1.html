@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-1</title>
+</head>
+<body>
+    <h1 class="name"> Branden Eric</h1>
+    <p class="message"></p>
+
+    <script>
+        let name = document.querySelector(".name").innerText;
+        console.log(name);
+
+        document.querySelector(".message").innerText = `Hello ${name}`;
+        document.querySelector(".message").innerHTML = `Hello <strong> ${name} </strong>`;
+    </script>
+</body>
+</html>

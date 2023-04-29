@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>If-else</h1>
+    <label for="price">Please enter the price info</label>
+    <input type="number" id="price1" placeholder="price">
+
+    <input onclick="getDiscount()" type="button" value="calculate">
+    <h3 id="result">Discounted Price</h3>
+
+    
+    <script>
+        function getDiscount(){
+            let price = +document.querySelector("#price1").value;
+            let result = document.querySelector("#result");
+
+            if(price > 500){
+                price = price*0.9;
+                
+            }
+            result.innerHTML =`Discounted Price : ${price}`;
+        }
+
+    
+    </script>
+    
+</body>
+</html>

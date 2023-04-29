@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Filter paractice</h1>
+    <script>
+        /*
+            Q — Write a program with the following coordinates:
+            coordinates = [ -100, 150, -32, 43, -20 ];
+            1 – Select negative coordinates,
+            2 – Convert them into positive numbers,
+            3 – Store the new values in a new array.
+            */
+        const coordinates = [ -100, 150, -32, 43, -20 ];
+        const newCoords = coordinates.filter( (eachElement) => eachElement<0 ).map( (eachElement) => Math.abs(eachElement));
+                console.log(newCoords);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Nested</title>
+    <style>
+        nav ul li{
+            color: blueviolet;
+            background-color: burlywood;
+        }
+        #prod{
+            color: blue;
+        }
+        .prod{
+            color: crimson;
+        }
+        .menu1{
+            text-decoration: underline;
+            display:inline-block;
+        }
+        .menu2 ul li{
+            color: red;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors Nested</h1>
+    <nav class="menu1">
+        <ul>
+            <li>Home</li>
+            <li class="prod">Products</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+    <nav class="menu2">
+        <ul>
+            <li>Home</li>
+            <li id="prod">Products</li>
+            <li>About Us</li>
+        </ul>
+        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum labore quos iure, dicta cumque expedita provident, molestias placeat corporis assumenda quas dolores voluptatum dolore, aspernatur voluptatibus quam. Deserunt, neque?
+
+        </div>
+    </nav>
+
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2 ClassList</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .yellow{
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="name blue"> Tim Berners-Lee</h1>
+    <p class="message"></p>
+
+    <script>
+        document.querySelector(".message").classList.add("red");
+        console.log(document.querySelector("p"));
+
+        document.querySelector(".name").classList.remove("blue");
+        document.querySelector(".name").classList.add("yellow");
+
+        console.log(document.querySelector("h1"));
+
+        let name = document.querySelector(".name").innerHTML;
+        document.querySelector(".message").innerHTML = `Hello ${name}`;
+
+        
+    </script>
+</body>
+</html>

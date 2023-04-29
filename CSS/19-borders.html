@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .test{
+            background-color: rgb(24, 162, 155);
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            margin: 20px;
+            padding-top: 15px;
+            text-align: center;
+        }
+        .a{
+            border: 10px groove red;
+        }
+        .b{
+            border: 2px dashed blue;
+            border-right: 3px double red;
+        }
+        .c{
+            border: 3px dotted blueviolet;
+            border-radius: 5px;
+        }
+        .d{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Borders</h1>
+    <div class="test a">Hello World!</div>
+    <div class="test b">Hello World!</div>
+    <div class="test c">Hello World!</div>
+    <div class="test d">Hello World!</div>
+    
+</body>
+</html>

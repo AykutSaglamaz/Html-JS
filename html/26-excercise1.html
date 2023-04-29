@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice 1</title>
+</head>
+<body>
+    <h1>DOM Practice 1</h1>
+    <input type="number" id="firstNum" placeholder="enter first number">
+    <input type="number" id= "secondNum" placeholder="enter second number">
+    
+    <input onclick="findSum()" type="button" value="ADD"> 
+    <!-- or -->
+    <!-- <button>Add</button>   -->
+
+    <p class="result">Result: </p>
+
+    <script>
+        function findSum(){
+            let first = Number(document.querySelector("#firstNum").value);
+
+            let second = Number(document.querySelector("#secondNum").value);
+            console.log(first, second);
+
+            let sum = first + second;
+            console.log(sum);
+
+
+            let resultText = document.querySelector(".result");
+            resultText.innerHTML = `Result : ${sum}`;
+
+        }
+    </script>
+    
+</body>
+</html>

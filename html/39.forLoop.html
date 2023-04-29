@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> for Loop practice 3</h1>
+
+    <div>
+        <div id="text">Number Counting</div>
+    </div>
+
+    <div id="result" style="border-left: 5px solid red; color:rgb(16, 232, 232)">Result</div>
+
+       
+    <script>
+    /*
+        Q — Write a program that finds how many numbers between 500 and 1000 (inclusive) can be both separately and together divided by 3 and 7, and displays the outcome.
+
+        i.e "There are … numbers that can be divided by 3, between 500 and 1000."
+
+        */
+        /*
+        var startP = 500; 
+        var endP = 1000;
+        */
+        //or
+        var startP = +prompt("Enter first number");
+        var endP = +prompt("Enter second number");
+
+    
+        if(endP<startP){
+            let temp =endP
+            endP =startP;
+            startP=temp;
+
+        }
+
+
+        var d3= 0;// number divided by 3
+        var d7= 0; // divided by 3
+        var d21 =0; // diveded by 3 and 7
+
+        for(var i =startP; i<=endP; i++){
+            if(i%3==0){
+                d3++;
+            }
+            if(i%7==0){
+                d7++;
+            }
+            if(i%21==0){
+                d21++
+            }
+
+        }
+        console.log(d3, d7, d21);
+        let result = document.querySelector("#result");
+        result.innerHTML = `There are ${d3} numbers divided by 3 <br>
+                            There are ${d7} numbers divided by 7 <br>
+                            There are ${d21} numbers divided by 3 and 7 `;
+
+// or
+    alert(`There are ${d3} that can be divided by 3`);
+    alert(`There are ${d7} that can be divided by 7`);
+    alert(`There are ${d21} that can be divided by both 3 and 7`);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ternary Practice-1</h1>
+
+    <input onkeyup="displayText()" type="number" id="price">
+
+    <p id="result"></p>
+
+    <script>
+        function displayText(){
+            let pText = document.querySelector("#price").value;
+            let displayIt = document.querySelector("#result");
+            
+
+            pText >= 50000 ? displayIt.innerHTML = "Best price" : 
+                        Text >= 20000 ? displayIt.innerHTML = "Normal": 
+                                 displayIt.innerHTML ="Not Enough";
+        }
+    </script>
+
+    
+</body>
+</html>

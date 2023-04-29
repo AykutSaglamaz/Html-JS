@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2 Input and Value</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .yellow{
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="name blue"> Dom-3 Input and Value</h1>
+    <input type="text" name="" id="txtName" value="John Doe">
+    <h2 id="message"></h2>
+
+    <script>
+        let name = document.querySelector("#txtName").value;
+        // print data to h2
+
+        document.querySelector("#message").innerHTML = `Hello ${name}`;
+        
+    </script>
+</body>
+</html>

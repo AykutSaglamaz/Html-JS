@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelector</title>
+</head>
+<body>
+    <h1 class="title">QuerySelector</h1>
+    <h2 class="JS">JavaScript</h2>
+    <div>It is a programming language</div>
+    
+    <h2 class="html">HTML</h2>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, at error dolor recusandae qui est ipsam in! Alias inventore quam libero necessitatibus, saepe sapiente laborum officiis reprehenderit sit modi non!</div>
+
+    <h2>CSS</h2>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nulla rerum sit incidunt, culpa eum esse impedit? Officia repudiandae, similique minima minus, fugiat non reprehenderit, perspiciatis dolorum qui magnam at!</div>
+
+    <nav class="menu">
+        <ul>
+        <li id="home">Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        </ul>
+    </nav>
+        <div>
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    <script>
+        let docObj1 = document.querySelector("h2");
+        console.log(docObj1);
+
+        let html1 = document.querySelector(".html");
+        console.log(html1);
+        
+        let menu = document.querySelector("nav ul #home");
+        console.log(menu);
+
+        let allh2 = document.querySelectorAll("h2");
+        console.log(allh2);
+
+        let boxdivs = document.querySelectorAll(".box1");
+        console.log(boxdivs);
+
+    </script>
+</body>
+</html>
