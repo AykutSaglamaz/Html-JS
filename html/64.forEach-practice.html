@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ForEachLoop</h1>
+  <script>
+  /*
+    Q — Write a program that multiplies the every element inside an array with 5 and return it.
+    
+    myArr = [ -5, 24, -13, 7, 3 ];
+    
+   */
+
+   let myArr = [ -5, 24, -13, 7, 3 ];
+   let newArr = [];//empty array
+
+   myArr.forEach( (element, index) => { // index = i like in for loop 
+
+    newArr[index] = element*5;
+
+    console.log(newArr);// [-25, 120, -65, 35, 15]
+   }
+   )
+
+
+
+  </script>
+    
+</body>
+</html>
